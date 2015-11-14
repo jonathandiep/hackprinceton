@@ -12,6 +12,11 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+
+
 app.use(morgan('dev'));
 
 var hackathonFile = path.join(__dirname, '/public/all.json');
@@ -23,6 +28,11 @@ app.use(express.static(__dirname + '/app'));
 
 app.get('/', function(req, res) {
   res.sendFile('/app/index.html');
+})
+
+app.post('/test', function(req,res) {
+  console.log(req.body);
+  res.send('posted (hopefully!)');
 })
 
 app.get('/hackathons', function(req, res) {

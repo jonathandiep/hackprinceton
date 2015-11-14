@@ -1,5 +1,5 @@
 <p>{{hackathonList}}</p>
 <div ng-repeat="hackathon in hackathonList">
-  <h3>{{ hackathon['Hackathon Name'] }}</h3>
-  <p ng-repeat="review in hackathon['Reviews']">{{ review }}</p>
+  <h3>{{ hackathon.hackathon_name }}</h3>
+  <p ng-repeat="review in hackathon.reviews ">{{ review }}</p>
 </div>

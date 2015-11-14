@@ -1,17 +1,17 @@
 {
   "hackathons": [
     {
-      "ID": 1,
-      "Hackathon Name": "Hack Princeton",
-      "Reviews": [
+      "id": 1,
+      "hackathon_name": "Hack Princeton",
+      "reviews": [
         "This is the first review description.",
         "Second review description."
       ]
     },
     {
-      "ID": 2,
-      "Hackathon Name": "Cal Hacks",
-      "Reviews": []
+      "id": 2,
+      "hackathon_name": "Cal Hacks",
+      "reviews": []
     }
   ]
 }
