@@ -33,6 +33,10 @@
 
 #heading {
   text-align: center;
+  color: black;
+  background-color: rgba(255,255,255,0.7);
+  padding-top: 5px;
+
 }
 
 #list {
@@ -45,5 +49,17 @@
 h3 {
   font-size: 40px;
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+#post {
+  font-size: 50px;
+  font-family: 'Kreon', serif;
+  font-weight: bold;
+}
+
+#hacks {
+  font-size: 50px;
+  font-family: 'Kreon', serif;
   font-weight: bold;
 }

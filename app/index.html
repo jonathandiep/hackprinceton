@@ -17,7 +17,11 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Kreon:700' rel='stylesheet' type='text/css'>
 </head>
+
+
 <body>
 
 
@@ -51,5 +55,34 @@
   <script src="app.js"></script>
   <script src="hackathons/hackathons.js"></script>
   <script src="review/review.js"></script>
+  <script type="text/javascript">(function(d, t, e, m){
+
+      // Async Rating-Widget initialization.
+      window.RW_Async_Init = function(){
+
+          RW.init({
+              huid: "268413",
+              uid: "7947e6b5179b3ddcbcf8a006fe1ee70a",
+              source: "website",
+              options: {
+                  "size": "medium",
+                  "style": "oxygen",
+                  "isDummy": false
+              }
+          });
+          RW.render();
+      };
+          // Append Rating-Widget JavaScript library.
+      var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
+          l = d.location, ck = "Y" + t.getFullYear() +
+          "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
+          f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+          a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+      if (d.getElementById(id)) return;
+      rw = d.createElement(e);
+      rw.id = id; rw.async = true; rw.type = "text/javascript";
+      rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+      s.parentNode.insertBefore(rw, s);
+      }(document, new Date(), "script", "rating-widget.com/"));</script>
 </body>
 </html>
