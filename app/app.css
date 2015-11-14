@@ -34,3 +34,16 @@
 #heading {
   text-align: center;
 }
+
+#list {
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 50px;
+  width: 400px;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
