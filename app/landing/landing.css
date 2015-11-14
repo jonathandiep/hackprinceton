@@ -1,10 +1,19 @@
+
 html {
-  background: url(pics/hack2.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+transition: background-image 1s ease-in-out;
+background: url(pics/hack2.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+-webkit-transition: opacity 1s ease-in-out;
+ -moz-transition: opacity 1s ease-in-out;
+ -o-transition: opacity 1s ease-in-out;
+ transition: opacity 1s ease-in-out;
+
 }
+
 
 #find_hackathon {
   font-size: 18px;
@@ -19,7 +28,7 @@ html {
 }
 
 h1{
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Kreon', serif;
   font-weight: bold;
   font-size: 60px;
 }
