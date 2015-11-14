@@ -1,8 +1,12 @@
-<p>{{ hackathonList }}</p>
+
+<center>
 <form action="/test" method="post">
   <select name="hackathons">
     <option ng-repeat="hackathon in hackathonList" value="{{ hackathon.hackathon_name }}">{{ hackathon.hackathon_name }}</option>
   </select>
+  <br><br>
   <textarea name="review" rows="5" cols="40"></textarea>
+  <br><br>
   <input type="submit" value="submit">
 </form>
+</center>
