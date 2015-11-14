@@ -3,6 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
 var path = require('path');
+var fs = require('fs');
 var port = process.env.PORT || 4000;
 
 app.use(function(req, res, next) {
@@ -32,6 +33,41 @@ app.get('/', function(req, res) {
 
 app.post('/test', function(req,res) {
   console.log(req.body);
+  var hackathonListing = req.body.hackathons;
+  var review  = req.body.review;
+  console.log(hackathonListing);
+  console.log(review);
+  var reviewList = fs.readFile('public/all.json', 'utf8', function(err, data) {
+    if (err) {
+      return console.log(err);
+    } else {
+      var reviews = JSON.parse(data);
+      /*
+      var reviewsArr = reviews.hackathons;
+      console.log(reviewsArr);
+      */
+
+      console.log('- review - ');
+      console.log(reviews);
+      reviews['hackathons'].forEach(function(hackathon) {
+        if(hackathon.hackathon_name === hackathonListing) {
+          hackathon['reviews'].push(review);
+        };
+      })
+      console.log('- pushed data -');
+      console.log(reviews.hackathons);
+
+      fs.writeFile('./public/all.json', JSON.stringify(reviews), function(err) {
+        if (err) {
+          return console.log(err);
+        } else {
+          console.log('successful!');
+        }
+      })
+    }
+  });
+
+
   res.send('posted (hopefully!)');
 })
 

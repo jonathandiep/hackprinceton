@@ -1,17 +1,1 @@
-{
-  "hackathons": [
-    {
-      "id": 1,
-      "hackathon_name": "Hack Princeton",
-      "reviews": [
-        "This is the first review description.",
-        "Second review description."
-      ]
-    },
-    {
-      "id": 2,
-      "hackathon_name": "Cal Hacks",
-      "reviews": []
-    }
-  ]
-}
+{"hackathons":[{"id":1,"hackathon_name":"Hack Princeton","reviews":["This is the first review description.","Second review description.","THIS WORKS!"]},{"id":2,"hackathon_name":"Cal Hacks","reviews":["PLS WORK"]}]}
