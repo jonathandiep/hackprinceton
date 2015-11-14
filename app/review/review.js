@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('myApp.view2', ['ngRoute'])
+angular.module('reviewView', ['ngRoute'])
 
-.controller('View2Ctrl', [function() {
+.controller('reviewCtrl', [function() {
 
 }]);

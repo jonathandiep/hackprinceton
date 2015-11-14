@@ -4,7 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'hackView',
-  'myApp.view2'
+  'reviewView'
 ])
 
 .config(['$routeProvider', function($routeProvider) {
@@ -13,9 +13,9 @@ angular.module('myApp', [
     templateUrl: 'hackathons/hackathons.html',
     controller: 'HackathonCtrl'
   })
-  .when('/view2', {
-    templateUrl: 'view2/view2.html',
-    controller: 'View2Ctrl'
+  .when('/review', {
+    templateUrl: 'review/review.html',
+    controller: 'reviewCtrl'
   })
   .otherwise({redirectTo: '/'});
 }]);
