@@ -68,8 +68,9 @@ app.post('/test', function(req,res) {
   });
 
 
-  res.redirect('http://localhost:4000/#/hackathons');
-})
+  res.send({ redirect: 'http://localhost:4000/#/hackathons' });
+
+});
 
 app.get('/hackathons', function(req, res) {
   res.sendFile(hackathonFile);
