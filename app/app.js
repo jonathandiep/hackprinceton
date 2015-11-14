@@ -9,6 +9,9 @@ angular.module('myApp', [
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider
+  .when('/', {
+    templateUrl: 'landing/landing.html'
+  })
   .when('/hackathons', {
     templateUrl: 'hackathons/hackathons.html',
     controller: 'HackathonCtrl'
