@@ -7,4 +7,13 @@ angular.module('hackView', ['ngRoute'])
     .then(function(data) {
       $scope.hackathonList = data.data.hackathons;
     })
+}])
+
+.controller('singleHackathonController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+  $scope.id = $routeParams.id;
+  console.log($scope.id);
+  $http.get('http://test-hackprinceton.azurewebsites.net/hackathons/')
+    .then(function(data) {
+      $scope.hackathonList = data.data.hackathons;
+    })
 }]);
