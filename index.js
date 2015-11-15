@@ -20,9 +20,8 @@ app.use(bodyParser.urlencoded({
 
 app.use(morgan('dev'));
 
-var hackathonFile = path.join(__dirname, '/public/all.json');
+var hackathonFile = path.join(__dirname, '/app/all.json');
 
-app.use(express.static(__dirname + '/public'));
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
 app.use(express.static(__dirname + '/app'));
@@ -37,7 +36,7 @@ app.post('/test', function(req,res) {
   var review  = req.body.review;
   console.log(hackathonListing);
   console.log(review);
-  var reviewList = fs.readFile('public/all.json', 'utf8', function(err, data) {
+  var reviewList = fs.readFile('app/all.json', 'utf8', function(err, data) {
     if (err) {
       return console.log(err);
     } else {
@@ -57,7 +56,7 @@ app.post('/test', function(req,res) {
       console.log('- pushed data -');
       console.log(reviews.hackathons);
 
-      fs.writeFile('./public/all.json', JSON.stringify(reviews), function(err) {
+      fs.writeFile('./app/all.json', JSON.stringify(reviews), function(err) {
         if (err) {
           return console.log(err);
         } else {
@@ -68,7 +67,8 @@ app.post('/test', function(req,res) {
   });
 
 
-  res.send({ redirect: 'http://localhost:4000/#/hackathons' });
+  //res.send({ redirect: 'http://localhost:4000/#/hackathons' });
+  res.send('Review submitted successfully. <a href="http://localhost:4000/#/hackathons">Click here</a> to view.');
 
 });
 
