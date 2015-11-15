@@ -1,1 +1,34 @@
-{"hackathons":[{"id":1,"hackathon_name":"Hack Princeton","reviews":[]},{"id":2,"hackathon_name":"Cal Hacks","reviews":[]}]}
+{
+  "hackathons": [
+    {
+      "id": 1,
+      "hackathon_name": "TunaHack",
+      "reviews": []
+    },
+    {
+      "id": 2,
+      "hackathon_name": "PennApps",
+      "reviews": []
+    },
+    {
+      "id": 3,
+      "hackathon_name": "HopHacks",
+      "reviews": []
+    },
+    {
+      "id": 4,
+      "hackathon_name": "MHacks",
+      "reviews": []
+    },
+    {
+      "id": 5,
+      "hackathon_name": "WeCanCode Ensenada",
+      "reviews": []
+    },
+    {
+      "id": 6,
+      "hackathon_name": "RamHacks",
+      "reviews": []
+    }
+  ]
+}
