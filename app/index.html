@@ -22,13 +22,20 @@
   <link href='https://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Kreon:700' rel='stylesheet' type='text/css'>
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
   <link rel="icon" href="icon2.png">
+  <style type="text/css">
+    #share-buttons img {
+    width: 35px;
+    padding: 5px;
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+    }
+  </style>
 </head>
 
-
 <body>
-
-
   <div id = "heading">
   <ul class="menu">
     <li><a href="#/">Home</a></li>
@@ -46,7 +53,36 @@
     <div ng-view></div>
 
 </center>
+<br><br><br><br>
+<center>
+  <a id="share"> <i> Share this on social media. </i> </a>
+  <br>
+<div id="share-buttons">
+  <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=https://test-hackprinceton.azurewebsites.net" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+    </a>
+    <!-- Google+ -->
+   <a href="https://plus.google.com/share?url=https://test-hackprinceton.azurewebsites.net" target="_blank">
+       <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+   </a>
 
+   <!-- LinkedIn -->
+   <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://test-hackprinceton.azurewebsites.net" target="_blank">
+       <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+   </a>
+   <!-- Tumblr-->
+    <a href="http://www.tumblr.com/share/link?url=https://test-hackprinceton.azurewebsites.net&amp;title=Hackathon_Reviews" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+    </a>
+
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=https://test-hackprinceton.azurewebsites.net&amp;text=Hackathon_Reviews&amp;hashtags=hackyelp" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>
+<br><br>
+  </div>
+</center>
 
 
   <!-- In production use:
