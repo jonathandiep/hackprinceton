@@ -68,7 +68,7 @@ app.post('/test', function(req,res) {
 
 
   //res.send({ redirect: 'http://localhost:4000/#/hackathons' });
-  res.send('Review submitted successfully. <a href="http://localhost:4000/#/hackathons">Click here</a> to view.');
+  res.send('Review submitted successfully. <a href="http://test-hackprinceton.azurewebsites.net/#/hackathons">Click here</a> to view.');
 
 });
 
