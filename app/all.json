@@ -29,6 +29,76 @@
       "id": 6,
       "hackathon_name": "RamHacks",
       "reviews": []
-    }
+    },
+    {
+      "id": 7,
+      "hackathon_name": "WeCanCode Tijuana",
+      "reviews": []
+    },
+    {
+      "id": 8,
+      "hackathon_name": "BigRed//Hacks",
+      "reviews": []
+    },
+    {
+      "id": 9,
+      "hackathon_name": "HackISU",
+      "reviews": []
+    },
+    {
+      "id": 10,
+      "hackathon_name": "BigRed//Hacks",
+      "reviews": []
+    },
+    {
+      "id": 11,
+      "hackathon_name": "HackTheNorth",
+      "reviews": []
+    },
+    {
+      "id": 12,
+      "hackathon_name": "WUHack",
+      "reviews": []
+    },
+    {
+      "id": 13,
+      "hackathon_name": "HackPR",
+      "reviews": []
+    },
+    {
+      "id": 14,
+      "hackathon_name": "HackGT",
+      "reviews": []
+    },
+    {
+      "id": 15,
+      "hackathon_name": "HackCUU",
+      "reviews": []
+    },
+    {
+      "id": 16,
+      "hackathon_name": "HackNY",
+      "reviews": []
+    },
+    {
+      "id": 17,
+      "hackathon_name": "HackTX",
+      "reviews": []
+    },
+    {
+      "id": 18,
+      "hackathon_name": "Huskie Hack",
+      "reviews": []
+    },
+    {
+      "id": 19,
+      "hackathon_name": "SDHacks",
+      "reviews": []
+    },
+    {
+      "id": 20,
+      "hackathon_name": "VandyHacks",
+      "reviews": []
+    },
   ]
 }
