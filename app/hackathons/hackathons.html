@@ -3,7 +3,7 @@
 <br><br>
 <div id="list">
 
-<div ng-repeat="hackathon in hackathonList">
+<div ng-repeat="hackathon in hackathonList | orderBy:'hackathon_name'">
   <h3><a ng-href="http://test-hackprinceton.azurewebsites.net/#/hackathons/{{ hackathon.id }}">{{ hackathon.hackathon_name }}</a></h3>
 
   <p><div class="rw-ui-container"></div></p>
