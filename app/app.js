@@ -16,6 +16,10 @@ angular.module('myApp', [
     templateUrl: 'hackathons/hackathons.html',
     controller: 'HackathonCtrl'
   })
+  .when('/hackathons/:id', {
+    templateUrl: 'hackathons/single.html',
+    controller: 'singleHackathonController'
+  })
   .when('/review', {
     templateUrl: 'review/review.html',
     controller: 'reviewCtrl'
