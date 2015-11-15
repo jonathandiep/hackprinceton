@@ -1,7 +1,7 @@
 <a id="hacks">reviews.View();</a>
 <br><br>
 <div id="list">
-<div ng-repeat="hackathon in hackathonList">
+<div ng-repeat="hackathon in hackathonList | orderBy:'hackathon_name'">
   <h3><u><a ng-href="http://test-hackprinceton.azurewebsites.net/#/hackathons/{{ hackathon.id }}">{{ hackathon.hackathon_name }}</a></u></h3>
 
   <p><div class="rw-ui-container"></div></p>
